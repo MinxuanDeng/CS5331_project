@@ -1,3 +1,23 @@
+## How to setup environment
+
+### setup db
+```
+docker run -d -p 50000:5432 -e POSTGRES_PASSWORD=qwe123QWE -e POSTGRES_DB=db postgres:14.1
+```
+
+### execute migration
+```
+python manage.py makemigrations cve
+
+python manage.py migrate
+```
+
+### setup service
+```
+python manage.py runserver
+```
+
+
 Issue 1: 
 
 Reproduction: CVE-2022-28346: field=count" from cve_user group by cve_user.id;DROP TABLE cve_user;--     
