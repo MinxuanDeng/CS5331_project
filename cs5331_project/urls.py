@@ -20,5 +20,5 @@ from cve.views import cve
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('cve/', cve, name="cve"),
+    path('cve_2022_28347/', cve, name="cve"),
 ]
